@@ -1,0 +1,10 @@
+jwt:
+  secret:
+    key: ABCafasdfasdfsdfasdfasdfasdfasdfasdfasdfasdfadsf
+
+logging:
+  level:
+    org.springframework: INFO
+    com.your_project: DEBUG
+server:
+  port: 8081
