@@ -67,7 +67,7 @@ public class TodoService {
     }
 
     public TodoResponse getTodo(long todoId) {
-        Todo todo = todoRepository.findByIdWithUser(todoId)
+        Todo todo = todoRepository.findByIdWithUserUsingQueryDSL(todoId)
                 .orElseThrow(() -> new InvalidRequestException("Todo not found"));
 
         User user = todo.getUser();
